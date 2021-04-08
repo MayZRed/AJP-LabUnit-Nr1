@@ -8,6 +8,10 @@ public class square {
         return colour;
     }
 
+    public void setColor(color colour) {
+        this.colour = colour;
+    }
+
     public void changeColor() {
         this.colour = colour.switchColor();
     }

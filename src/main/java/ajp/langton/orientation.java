@@ -10,6 +10,6 @@ public enum orientation {
     }
 
     public orientation turnLeft() {
-        return orientations[(this.ordinal()-1)%orientations.length];
+        return orientations[(orientations.length+this.ordinal()-1)%orientations.length];
     }
 }
