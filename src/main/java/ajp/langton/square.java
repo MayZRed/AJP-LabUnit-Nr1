@@ -15,4 +15,8 @@ public class square {
     public void changeColor() {
         this.colour = colour.switchColor();
     }
+
+    public void printSquare() {
+        System.out.print(colour.ordinal());
+    }
 }

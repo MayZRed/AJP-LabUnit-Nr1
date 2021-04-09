@@ -3,7 +3,7 @@ package ajp.langton;
 public class ant {
 
     square[][] field = new square[11][11];
-    orientation direction = orientation.EAST;
+    orientation direction = orientation.SOUTH;
     int row = 0;
     int column = 0;
 
@@ -26,24 +26,14 @@ public class ant {
         this.getCurrentSquare().changeColor();
 
         switch (direction) {
-            case NORTH:
-                row = row-1;
-                break;
-            case EAST:
-                column = column+1;
-                break;
-            case SOUTH:
-                row = row+1;
-                break;
-            case WEST:
-                column = column-1;
-                break;
+            case NORTH -> row = row - 1;
+            case EAST -> column = column + 1;
+            case SOUTH -> row = row + 1;
+            case WEST -> column = column - 1;
         }
     }
 
     public square getCurrentSquare() {
         return field[row+5][column+5];
     }
-
-
 }

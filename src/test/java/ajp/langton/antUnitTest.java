@@ -16,7 +16,7 @@ public class antUnitTest {
         Assert.assertEquals("initial row not 0 |", 0, theAnt.row);
         Assert.assertEquals("initial column not 0 |", 0, theAnt.column);
         Assert.assertEquals("initial square color not WHITE |", color.WHITE, theAnt.getCurrentSquare().getColor());
-        Assert.assertEquals("initial orientation not SOUTH |", orientation.EAST, theAnt.direction);
+        Assert.assertEquals("initial orientation not SOUTH |", orientation.SOUTH, theAnt.direction);
     }
 
     private static Stream<Arguments> firstMoveParameters() {

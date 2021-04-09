@@ -5,7 +5,7 @@ import static ajp.langton.orientation.*;
 
 public class orientationTest {
 
-    private static orientation[] orientations = new orientation[] {NORTH, EAST, SOUTH, WEST, NORTH};
+    private static final orientation[] orientations = new orientation[] {NORTH, EAST, SOUTH, WEST, NORTH};
 
     @Test
     public void orientationToRightTest() {
